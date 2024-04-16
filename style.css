@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #stadium-container {
+    flex: 1;
+    min-width: 33%;
+  }
+  
+  #stadium-image {
+    max-width: 100%;
+  }
+  
+  #ticket-info {
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sports Game Ticket System</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Responsive eklenti kütüphanesi-->
+  <script src="https://unpkg.com/image-map/dist/image-map.js"></script>
+
+</head>
+<body>
+  <h1>Sports Game Ticket System</h1>
+  <div id="stadium-container">
+    <img src="stadium.png" usemap="#stadiummap" id="stadium-image">
+    <map name="stadiummap" id="stadium-map">
+
+      <area  alt="1" title="Category 1" href="#" coords="328,150,219,133" shape="rect">
+      <area  alt="2" title="Category 2" href="#" coords="213,148,141,149,119,128,212,132" shape="poly">
+      <area  alt="3" title="Category 3" href="#" coords="108,122,78,96,115,83,422,83,465,100,435,118" shape="poly">
+      <area alt="4" title="Category 4" href="#" coords="401,150,465,100,474,127,475,358,463,381,402,328,402,327,402,327" shape="poly">
+      <area  alt="4" title="Category 4" href="#" coords="144,327,79,379,67,358,68,181,141,181" shape="poly">
+      <area  alt="3" title="Category 3" href="#" coords="107,363,81,383,117,396,444,394,462,382,431,358" shape="poly">
+      <area  alt="2" title="Category 2" href="#" coords="329,132,332,147,402,151,419,132" shape="poly">
+    </map>
+  </div>
+  <div id="ticket-info">
+    <p>Selected Category: <span id="selected-category"></span></p>
+    <p>Number of Persons: <input type="number" id="num-persons" value="1" min="1"></p>
+    <p>Total Price: <span id="total-price"></span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
